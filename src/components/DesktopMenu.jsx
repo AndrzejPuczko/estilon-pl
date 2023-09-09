@@ -48,11 +48,18 @@ const DesktopMenu = () => {
 					<NavigationMenuTrigger>Portfolio</NavigationMenuTrigger>
 					<NavigationMenuContent>
 						<ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-							{portfolio.map(link => (
-								<ListItem key={link.title} title={link.title} href={link.href}>
-									{link.description}
-								</ListItem>
-							))}
+							<ListItem href="/docs/installation" title="Zaufali nam">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit
+							</ListItem>
+							<ListItem href="/docs/primitives/typography" title="Opinie">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit
+							</ListItem>{' '}
+							<ListItem href="/docs/installation" title="Zaufali nam">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit
+							</ListItem>
+							<ListItem href="/docs/primitives/typography" title="Opinie">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit
+							</ListItem>
 						</ul>
 					</NavigationMenuContent>
 				</NavigationMenuItem>
