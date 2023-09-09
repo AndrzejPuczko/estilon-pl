@@ -1,5 +1,9 @@
+import Image from "next/image"
+
 const Home = () => {
-	return <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">People stopped telling jokes</h4>
+	return <div> 
+		<Image src="/slides/slide1.jpg" width="1920" height={100} />
+	</div>
 }
 
 export default Home
