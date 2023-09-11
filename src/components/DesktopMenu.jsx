@@ -2,7 +2,6 @@
 import React from 'react'
 import { cn } from '@/utils/utils'
 import Link from 'next/link'
-import portfolio from '@/labels/navLabels'
 import {
 	NavigationMenu,
 	NavigationMenuContent,
@@ -32,7 +31,7 @@ const DesktopMenu = () => {
 									</a>
 								</NavigationMenuLink>
 							</li>
-							<ListItem href="/docs" title="O nas">
+							<ListItem href="#o-nas" title="O nas">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore praesentium.
 							</ListItem>
 							<ListItem href="/docs/installation" title="Zaufali nam">
