@@ -1,9 +1,15 @@
-import Image from "next/image"
+import HeroImg from '@/components/HeroImg'
+import AboutUs from '@/components/AboutUs'
+import AboutAnimations from '@/components/AboutAnimations'
 
 const Home = () => {
-	return <div> 
-		<Image src="/slides/slide1.jpg" width="1920" height={100} />
-	</div>
+	return (
+		<main className="main">
+			<HeroImg />
+			<AboutUs />
+			<AboutAnimations />
+		</main>
+	)
 }
 
 export default Home
