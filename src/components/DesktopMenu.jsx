@@ -46,7 +46,7 @@ const DesktopMenu = () => {
 				<NavigationMenuItem>
 					<NavigationMenuTrigger>Portfolio</NavigationMenuTrigger>
 					<NavigationMenuContent>
-						<ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+						<ul className="grid w-[400px] gap-3 p-4 md:w-[400px] md:grid-cols-2 lg:w-[400px] 2xl:w-[500px] ">
 							<ListItem href="/docs/installation" title="Zaufali nam">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit
 							</ListItem>
