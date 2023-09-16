@@ -1,7 +1,7 @@
 import Image from 'next/image'
 const ShortPortfolio = () => {
 	return (
-		<div className="short-portfolio my-20">
+		<div className="short-portfolio mt-20">
 			<div className="flex text-center mx-auto justify-center flex-col items-center">
 				<h3 className="scroll-m-20 mb-10 px-2 text-5xl font-light tracking-tight transition-colors max-w-4xl leading-tight">
 					Zobacz kilka naszych <span className="font-bold">prac</span>.
