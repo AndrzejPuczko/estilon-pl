@@ -3,6 +3,7 @@ import AboutUs from '@/components/AboutUs'
 import AboutAnimations from '@/components/AboutAnimations'
 import Cooperation from '@/components/Cooperation'
 import ShortPortfolio from '@/components/ShortPortfolio'
+import Opinions from '@/components/Opinions'
 
 const Home = () => {
 	return (
@@ -12,6 +13,7 @@ const Home = () => {
 			<AboutAnimations />
 			<Cooperation />
 			<ShortPortfolio />
+			<Opinions />
 		</main>
 	)
 }
