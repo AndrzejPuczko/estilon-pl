@@ -1,7 +1,7 @@
 import { Lato, Open_Sans } from 'next/font/google'
 import '@/styles/globals.css'
 import Header from '@/components/Header'
-import Head from 'next/head'
+
 const lato = Lato({
 	subsets: ['latin'],
 	weight: ['400', '700', '900'],
