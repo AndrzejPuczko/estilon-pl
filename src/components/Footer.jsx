@@ -13,24 +13,28 @@ const Footer = () => {
 				</div>
 				<nav className="footer-nav flex gap-8 mx-auto">
 					<div className="AboutUs">
-                    <h3 className="mt-1 mb-3 uppercase font-semibold text-zinc-200">About Us</h3>
-						<ul className='text-sm'>
-							<li className='py-1'>Contact us</li>
-							<li className='py-1'>Newsletter</li>
-							<li className='py-1'>Animations</li>
-							<li className='py-1'>NextJS</li>
+						<h3 className="mt-1 mb-3 uppercase font-semibold text-zinc-200">About Us</h3>
+						<ul className="text-sm">
+							<li className="py-1">Contact us</li>
+							<li className="py-1">Newsletter</li>
+							<li className="py-1">Animations</li>
+							<li className="py-1">NextJS</li>
 						</ul>
 					</div>
-                    <div className="AboutUs">
-                    <h3 className="mt-1 mb-3 uppercase font-semibold text-zinc-200">Info</h3>
-						<ul className='text-sm'>
-							<li className='py-1'>Contact us</li>
-							<li className='py-1'>Newsletter</li>
-							<li className='py-1'>Animations</li>
-							<li className='py-1'>NextJS</li>
+					<div className="AboutUs">
+						<h3 className="mt-1 mb-3 uppercase font-semibold text-zinc-200">Info</h3>
+						<ul className="text-sm">
+							<li className="py-1">Contact us</li>
+							<li className="py-1">Newsletter</li>
+							<li className="py-1">Animations</li>
+							<li className="py-1">NextJS</li>
 						</ul>
 					</div>
 				</nav>
+				<div className="flex flex-col max-h-9 gap-3 items-end">
+					<Image src="/like-fb.jpg" width="146" height="35" />
+					<Image src="/slick-2.jpg" width="185" height="35" />
+				</div>
 			</div>
 		</div>
 	)
