@@ -1,7 +1,7 @@
 import Image from "next/image"
 const Cooperation = () => {
 	return (
-		<div className="cooperation mt-16 mx-10">
+		<div className="cooperation mt-16 mx-10" id='zaufali-nam'>
 			<div className="flex text-center my-0 mx-auto justify-center flex-col items-center">
 				<h3 className="scroll-m-20 pb-2 px-2 text-5xl font-light tracking-tight transition-colors max-w-4xl leading-tight">
 					Dziękujemy za <span className="font-bold">zaufanie</span>.<br />
