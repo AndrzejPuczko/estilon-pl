@@ -2,7 +2,7 @@ import HeroImg from '@/components/HeroImg'
 import AboutUs from '@/components/AboutUs'
 import AboutAnimations from '@/components/AboutAnimations'
 import Cooperation from '@/components/Cooperation'
-import ShortPortfolio from '@/components/ShortPortfolio'
+import HomepageGallery from '@/components/HomepageGallery'
 import Opinions from '@/components/Opinions'
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
 			<AboutUs />
 			<AboutAnimations />
 			<Cooperation />
-			<ShortPortfolio />
+			<HomepageGallery />
 			<Opinions />
 		</main>
 	)
