@@ -1,7 +1,10 @@
 import Image from 'next/image'
+
+const currentYear = new Date().getFullYear();
+
 const Footer = () => {
 	return (
-		<div className="footer bg-neutral-900 text-zinc-400 py-16">
+		<div className="footer bg-neutral-900 text-zinc-400 pt-16 pb-10">
 			<div className="grid grid-cols-1 lg:grid-cols-3 max-w-6xl px-6 mx-auto ">
 				<div>
 					<h3 className="text-lg font-semibold text-zinc-200">Empowering Designers, Makers, Doers and Creatives</h3>
@@ -36,6 +39,7 @@ const Footer = () => {
 					<Image src="/slick-2.jpg" width="185" height="35" />
 				</div>
 			</div>
+			<p className="mt-10 text-sm text-center">© {currentYear} - <a href="https://webdevlab.pl" className='hover:text-purple-500 duration-200 font-bold'>webdevLab.pl</a> - Wszelkie prawa zastrzeżone</p>
 		</div>
 	)
 }
