@@ -3,14 +3,17 @@ const animations = 'animations'
 
 const galleryItems = [
 	{
+		id: 1,
 		category: packshot,
 		src: '/homepage-gallery/1.jpg',
 		alt: 'Jakiś tytuł',
 		width: '1024',
 		height: '1024',
 		homepageGallery: true,
+		animation: true,
 	},
 	{
+		id: 2,
 		category: packshot,
 		src: '/homepage-gallery/3.jpg',
 		alt: 'Jakiś tytuł',
@@ -19,6 +22,7 @@ const galleryItems = [
 		homepageGallery: true,
 	},
 	{
+		id: 3,
 		category: animations,
 		src: '/homepage-gallery/4.jpg',
 		alt: 'Jakiś tytuł',
@@ -27,6 +31,7 @@ const galleryItems = [
 		homepageGallery: true,
 	},
 	{
+		id: 4,
 		category: animations,
 		src: '/homepage-gallery/5.jpg',
 		alt: 'Jakiś tytuł',
@@ -35,6 +40,7 @@ const galleryItems = [
 		homepageGallery: true,
 	},
 	{
+		id: 5,
 		category: packshot,
 		src: '/homepage-gallery/2.jpg',
 		alt: 'Jakiś tytuł',
@@ -43,6 +49,7 @@ const galleryItems = [
 		homepageGallery: true,
 	},
 	{
+		id: 6,
 		category: packshot,
 		src: '/homepage-gallery/6.jpg',
 		alt: 'Jakiś tytuł',
@@ -50,7 +57,112 @@ const galleryItems = [
 		height: '1024',
 		homepageGallery: true,
 	},
-	
+	{
+		id: 7,
+		category: animations,
+		src: '/homepage-gallery/5.jpg',
+		alt: 'Jakiś tytuł',
+		width: '1024',
+		height: '1024',
+	},
+	{
+		id: 8,
+		category: packshot,
+		src: '/homepage-gallery/1.jpg',
+		alt: 'Jakiś tytuł',
+		width: '1024',
+		height: '1024',
+
+		animation: true,
+	},
+	{
+		id: 8,
+		category: packshot,
+		src: '/homepage-gallery/3.jpg',
+		alt: 'Jakiś tytuł',
+		width: '1024',
+		height: '1024',
+	},
+	{
+		id: 10,
+		category: animations,
+		src: '/homepage-gallery/4.jpg',
+		alt: 'Jakiś tytuł',
+		width: '1024',
+		height: '1024',
+	},
+	{
+		id: 11,
+		category: animations,
+		src: '/homepage-gallery/5.jpg',
+		alt: 'Jakiś tytuł',
+		width: '1024',
+		height: '1024',
+	},
+	{
+		id: 12,
+		category: packshot,
+		src: '/homepage-gallery/2.jpg',
+		alt: 'Jakiś tytuł',
+		width: '1024',
+		height: '1024',
+	},
+	{
+		id: 13,
+		category: packshot,
+		src: '/homepage-gallery/6.jpg',
+		alt: 'Jakiś tytuł',
+		width: '1024',
+		height: '1024',
+	},
+	{
+		id: 14,
+		category: animations,
+		src: '/homepage-gallery/5.jpg',
+		alt: 'Jakiś tytuł',
+		width: '1024',
+		height: '1024',
+	},
+	{
+		id: 15,
+		category: animations,
+		src: '/homepage-gallery/4.jpg',
+		alt: 'Jakiś tytuł',
+		width: '1024',
+		height: '1024',
+	},
+	{
+		id: 16,
+		category: animations,
+		src: '/homepage-gallery/5.jpg',
+		alt: 'Jakiś tytuł',
+		width: '1024',
+		height: '1024',
+	},
+	{
+		id: 17,
+		category: packshot,
+		src: '/homepage-gallery/2.jpg',
+		alt: 'Jakiś tytuł',
+		width: '1024',
+		height: '1024',
+	},
+	{
+		id: 18,
+		category: packshot,
+		src: '/homepage-gallery/6.jpg',
+		alt: 'Jakiś tytuł',
+		width: '1024',
+		height: '1024',
+	},
+	{
+		id: 19,
+		category: animations,
+		src: '/homepage-gallery/5.jpg',
+		alt: 'Jakiś tytuł',
+		width: '1024',
+		height: '1024',
+	},
 ]
 
 export default galleryItems
