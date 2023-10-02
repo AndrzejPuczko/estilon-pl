@@ -17,42 +17,46 @@ const DesktopMenu = () => {
 		<NavigationMenu className="hidden sm:grid">
 			<NavigationMenuList>
 				<NavigationMenuItem>
-					<NavigationMenuTrigger>Home</NavigationMenuTrigger>
+					<NavigationMenuTrigger>
+						<Link href="/">Home</Link>
+					</NavigationMenuTrigger>
 					<NavigationMenuContent>
 						<ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
 							<li className="row-span-3">
 								<NavigationMenuLink asChild>
 									<a
 										className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-										href="/">
+										href="/#animacje">
 										<p>IMAGE</p>
-										<div className="mb-2 mt-4 text-lg font-medium">shadcn/ui</div>
-										<p className="text-sm leading-tight text-muted-foreground">Beautifully designed components built with Radix UI and Tailwind CSS.</p>
+										<div className="mb-2 mt-4 text-lg font-medium">Animacje 360°</div>
+										<p className="text-sm leading-tight text-muted-foreground">Ożyw swoje produkty dzięki animacjom 360° i przekonaj więcej klientów!</p>
 									</a>
 								</NavigationMenuLink>
 							</li>
-							<ListItem href="#o-nas" title="O nas">
+							<ListItem href="/#o-nas" title="O nas">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore praesentium.
 							</ListItem>
-							<ListItem href="/docs/installation" title="Zaufali nam">
+							<ListItem href="/#zaufali-nam" title="Zaufali nam">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit
 							</ListItem>
-							<ListItem href="/docs/primitives/typography" title="Opinie">
+							<ListItem href="/#galeria" title="Galeria">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit
 							</ListItem>
 						</ul>
 					</NavigationMenuContent>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
-					<NavigationMenuTrigger>Portfolio</NavigationMenuTrigger>
+					<NavigationMenuTrigger>
+						<Link href="/oferta">Oferta</Link>
+					</NavigationMenuTrigger>
 					<NavigationMenuContent>
 						<ul className="grid w-[400px] gap-3 p-4 md:w-[400px] md:grid-cols-2 lg:w-[400px] 2xl:w-[500px] ">
-							<ListItem href="/docs/installation" title="Zaufali nam">
+							<ListItem href="/oferta#animacje" title="Animacje">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit
 							</ListItem>
 							<ListItem href="/docs/primitives/typography" title="Opinie">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit
-							</ListItem>{' '}
+							</ListItem>
 							<ListItem href="/docs/installation" title="Zaufali nam">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit
 							</ListItem>
@@ -63,8 +67,8 @@ const DesktopMenu = () => {
 					</NavigationMenuContent>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
-					<Link href="/docs" legacyBehavior passHref>
-						<NavigationMenuLink className={navigationMenuTriggerStyle()}>Oferta</NavigationMenuLink>
+					<Link href="/portfolio" legacyBehavior passHref>
+						<NavigationMenuLink className={navigationMenuTriggerStyle()}>Portfolio</NavigationMenuLink>
 					</Link>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
