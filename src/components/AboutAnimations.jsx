@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const AboutAnimations = () => {
 	return (
-		<div className="about-animations bg-neutral-900 text-zinc-200 py-16">
+		<div className="about-animations bg-neutral-900 text-zinc-200 py-16" id="animacje">
 			<div className="flex text-center my-0 mx-auto justify-center flex-col items-center">
 				<h2 className="scroll-m-20 pb-2 px-2 text-5xl font-light tracking-tight transition-colors max-w-4xl leading-tight">
 					Slick comes with <span className="font-semibold">modular,</span> structured codes Lorem ipsum dolor sit amet.
@@ -30,7 +30,8 @@ const AboutAnimations = () => {
 					<p className="leading-7 mt-2 text-base max-w-md lg:max-w-xs">Estilon to ekspert w obszarze e-merchandisingu. się w fotografii produktowej,</p>
 				</div>
 
-			<Image src="/anim.png" width="850" height="300" alt="Animation" className="mt-20" />
+			<Image src="/anim.png" width="850" height="425" alt="Animation" className="mt-20" />
+			{/* <iframe src="/homepage-animation/index.html" width='870' height='400' /> */}
 			</div>
 
 		</div>
