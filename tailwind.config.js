@@ -69,7 +69,10 @@ module.exports = {
 				'blur-10': 'blur(10px)',
 			},
 			maxWidth: {
-				'1400': '1400px',
+				1400: '1400px',
+			},
+			backgroundImage: {
+				'title-pattern': "url('/category-title.jpg')",
 			},
 		},
 	},
