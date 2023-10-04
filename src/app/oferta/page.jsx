@@ -1,12 +1,16 @@
-import CategoryTitle from "@/components/CategoryTitle"
+import AboutOffer from '@/components/AboutOffer'
+import CategoryTitle from '@/components/CategoryTitle'
+import OfferCategory from '@/components/OfferCategory'
 
-const Oferta = () => {
+
+const Offer = () => {
 	return (
 		<>
 			<CategoryTitle title="Oferta" />
-			<div id="animacje">Animacje</div>
+			<AboutOffer />
+			<OfferCategory />
 		</>
 	)
 }
 
-export default Oferta
+export default Offer
