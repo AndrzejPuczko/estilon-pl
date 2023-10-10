@@ -14,13 +14,16 @@ const openSans = Open_Sans({
 })
 
 export const metadata = {
-	title: 'Estilon',
-	description: 'Estilon',
+	title: 'Estilon papapa',
+	description: 'Estilon pl - papa',
 }
 
 const RootLayout = ({ children }) => {
 	return (
 		<html lang="pl">
+			<head>
+				<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+			</head>
 			<body className={`${openSans.className} ${openSans.variable} ${lato.variable}`}>
 				<Header />
 				{children}
