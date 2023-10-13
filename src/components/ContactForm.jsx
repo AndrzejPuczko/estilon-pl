@@ -1,27 +1,24 @@
 'use client'
+import ReCAPTCHA from 'react-google-recaptcha'
 import { useState } from 'react'
-import dynamic from 'next/dynamic'
 import { Button } from './ui/button'
 import { Input } from './ui/input'
 import { Textarea } from './ui/textarea'
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
-const DynamicReCaptcha = dynamic(() => import('@/components/reCaptchaComponent'), {
-	ssr: false,
-})
-
 export const ContactUs = () => {
 	const form = useRef()
 
 	const [formSent, setFormSent] = useState(false)
+	const [reCaptchaError, setReCaptchaError] = useState(false)
 
 	const sendEmail = e => {
 		e.preventDefault()
 
 		const captchaValue = form.current.querySelector('textarea[name="g-recaptcha-response"]').value
 		if (!captchaValue) {
-			console.log('Proszę potwierdzić reCAPTCHA')
+			setReCaptchaError('Proszę potwierdzić reCAPTCHA')
 			return
 		}
 
@@ -41,12 +38,13 @@ export const ContactUs = () => {
 	}
 
 	return (
-		<div className="kontakt-form py-20 max-w-5xl mx-auto">
+		<div className="kontakt-form py-20 max-w-3xl mx-auto">
 			<form ref={form} onSubmit={sendEmail}>
 				<Input type="text" id="name" placeholder="Imię i nazwisko" name="user_name" required className="my-2" />
 				<Input type="email" id="email" placeholder="Adres email" name="user_email" required className="my-2" />
 				<Textarea placeholder="Wprowadź swoją wiadomość" name="message" required className="my-2" />
-				<DynamicReCaptcha />
+				<ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA} onChange={sendEmail} className="my-2" />
+				<p>{reCaptchaError}</p>
 				<Button type="submit" value="Send">
 					Wyślij
 				</Button>
