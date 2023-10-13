@@ -23,7 +23,7 @@ const PortfolioGallery = () => {
 				<ul className="gallery grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mb-10">
 					{filteredImages.map(image =>
 						image.animation === true ? (
-							<li className="cursor-pointer m-2">
+							<li key={image.id} className="cursor-pointer m-2">
 								<Modal>
 									<ModalTrigger>
 										<Image src={image.src} width={image.width} height={image.height} />
